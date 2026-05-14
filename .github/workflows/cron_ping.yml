@@ -1,0 +1,13 @@
+name: Timer Notifiche
+on:
+  schedule:
+    - cron: '* * * * *' # Bussa ogni minuto
+  workflow_dispatch: # Permette di testarlo premendo un tasto su GitHub
+
+jobs:
+  ping-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bussata al server PHP
+        run: |
+          curl -s https://www.tuosito.it/cron/check_notify.php
