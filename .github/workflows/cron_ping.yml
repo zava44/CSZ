@@ -10,4 +10,4 @@ jobs:
     steps:
       - name: Bussata al server PHP
         run: |
-          curl -s https://www.tuosito.it/cron/check_notify.php
+          curl -s https://centrosicurezzazava.altervista.org/check_notify.php
